@@ -1,9 +1,12 @@
 // Mobile Navigation Toggle
 const navToggle = document.getElementById("navToggle")
 const navMenu = document.getElementById("navMenu")
+const navOverlay = document.getElementById("navOverlay")
 
 navToggle.addEventListener("click", () => {
   navMenu.classList.toggle("active")
+  navOverlay.classList.toggle("active")
+  document.body.style.overflow = navMenu.classList.contains("active") ? "hidden" : ""
 
   // Animate hamburger icon
   const spans = navToggle.querySelectorAll("span")
@@ -18,16 +21,43 @@ navToggle.addEventListener("click", () => {
   }
 })
 
+navOverlay.addEventListener("click", () => {
+  navMenu.classList.remove("active")
+  navOverlay.classList.remove("active")
+  document.body.style.overflow = ""
+
+  const spans = navToggle.querySelectorAll("span")
+  spans[0].style.transform = "none"
+  spans[1].style.opacity = "1"
+  spans[2].style.transform = "none"
+})
+
 // Close mobile menu when clicking on a link
-const navLinks = document.querySelectorAll(".nav-link")
+const navLinks = document.querySelectorAll(".nav-link, .nav-menu .btn")
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     navMenu.classList.remove("active")
+    navOverlay.classList.remove("active")
+    document.body.style.overflow = ""
+
     const spans = navToggle.querySelectorAll("span")
     spans[0].style.transform = "none"
     spans[1].style.opacity = "1"
     spans[2].style.transform = "none"
   })
+})
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768 && navMenu.classList.contains("active")) {
+    navMenu.classList.remove("active")
+    navOverlay.classList.remove("active")
+    document.body.style.overflow = ""
+
+    const spans = navToggle.querySelectorAll("span")
+    spans[0].style.transform = "none"
+    spans[1].style.opacity = "1"
+    spans[2].style.transform = "none"
+  }
 })
 
 // Header scroll effect

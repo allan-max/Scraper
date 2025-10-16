@@ -11,12 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Added mobile menu overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
     <!-- Fixed CTA Button -->
     <button id="fixedCTA" class="fixed-cta" aria-label="Solicitar Demonstração">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM14 11H11V14H9V11H6V9H9V6H11V9H14V11Z" fill="currentColor"/>
         </svg>
-        Solicitar Demo
+        <span class="cta-text">Solicitar Demo</span>
     </button>
 
     <!-- Header -->
@@ -38,6 +41,7 @@
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link">Início</a></li>
                 <li><a href="#features" class="nav-link">Funcionalidades</a></li>
+                <li><a href="#custom-automation" class="nav-link">Automação Personalizada</a></li>
                 <li><a href="#pricing" class="nav-link">Planos</a></li>
                 <li><a href="#testimonials" class="nav-link">Depoimentos</a></li>
                 <li><a href="#faq" class="nav-link">FAQ</a></li>
@@ -156,8 +160,8 @@
                             <path d="M16 10V16L20 18M24 16C24 20.4183 20.4183 24 16 24C11.5817 24 8 20.4183 8 16C8 11.5817 11.5817 8 16 8C20.4183 8 24 11.5817 24 16Z" stroke="#FF9500" stroke-width="2" fill="none"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">Relatórios Detalhados</h3>
-                    <p class="feature-description">Gere documentos completos em Word com todas as informações das RFQs, incluindo itens, comentários e anexos.</p>
+                    <h3 class="feature-title">Monitoramento de Status</h3>
+                    <p class="feature-description">Acompanhe em tempo real o status de cada cotação e receba notificações sobre comentários e atualizações importantes.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -188,6 +192,90 @@
                     </div>
                     <h3 class="feature-title">Redução de Erros</h3>
                     <p class="feature-description">Elimine erros humanos no processo de cotação com automação inteligente e validação automática de dados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Automation Section -->
+    <section class="custom-automation" id="custom-automation">
+        <div class="container">
+            <div class="automation-content">
+                <div class="automation-text">
+                    <h2 class="section-title">Desenvolvemos a automação que o seu processo precisa</h2>
+                    <p class="automation-subtitle">Nem toda empresa é igual — e sua rotina merece uma solução sob medida.</p>
+                    <p class="automation-description">Além do nosso robô Nimbi, desenvolvemos automações personalizadas para diferentes áreas e sistemas da sua empresa. Podemos criar scripts e robôs que automatizam tarefas repetitivas, integrando sistemas, extraindo relatórios, preenchendo formulários e acelerando processos internos.</p>
+                    <p class="automation-description">Nossa equipe analisa o fluxo atual, entende suas necessidades e entrega uma automação completa, segura e fácil de usar — com suporte contínuo e possibilidade de integração com outras plataformas corporativas.</p>
+                    
+                    <div class="automation-benefits">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🔄</div>
+                            <div class="benefit-text">
+                                <h4>Automatização de rotinas administrativas</h4>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">📊</div>
+                            <div class="benefit-text">
+                                <h4>Geração de relatórios e integrações com Excel, ERPs e CRMs</h4>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">⚙️</div>
+                            <div class="benefit-text">
+                                <h4>Personalização total conforme os processos da sua empresa</h4>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🔒</div>
+                            <div class="benefit-text">
+                                <h4>Segurança e confidencialidade garantidas</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="automation-cta">
+                        <p class="cta-question">💡 Tem um processo que pode ser automatizado?</p>
+                        <p class="cta-description">Fale com a gente e descubra como podemos transformar o seu fluxo de trabalho.</p>
+                        <a href="#contact" class="btn btn-primary btn-large">Solicitar Automação</a>
+                    </div>
+                </div>
+                <div class="automation-visual">
+                    <div class="automation-illustration">
+                        <svg width="100%" height="100%" viewBox="0 0 500 500" fill="none">
+                            <circle cx="250" cy="250" r="200" fill="#E6F2FF" opacity="0.3"/>
+                            <circle cx="250" cy="250" r="150" fill="#E6F9F2" opacity="0.4"/>
+                            <g transform="translate(250, 250)">
+                                <circle r="60" fill="#0066FF"/>
+                                <path d="M0,-70 L10,-50 L-10,-50 Z M70,0 L50,10 L50,-10 Z M0,70 L10,50 L-10,50 Z M-70,0 L-50,10 L-50,-10 Z" fill="#0066FF"/>
+                                <circle r="25" fill="white"/>
+                            </g>
+                            <g transform="translate(150, 150)">
+                                <circle r="35" fill="#00D084"/>
+                                <circle r="15" fill="white"/>
+                            </g>
+                            <g transform="translate(350, 150)">
+                                <circle r="35" fill="#FF9500"/>
+                                <circle r="15" fill="white"/>
+                            </g>
+                            <g transform="translate(350, 350)">
+                                <circle r="35" fill="#8B5CF6"/>
+                                <circle r="15" fill="white"/>
+                            </g>
+                            <line x1="250" y1="250" x2="150" y2="150" stroke="#CBD5E1" stroke-width="3" stroke-dasharray="5,5"/>
+                            <line x1="250" y1="250" x2="350" y2="150" stroke="#CBD5E1" stroke-width="3" stroke-dasharray="5,5"/>
+                            <line x1="250" y1="250" x2="350" y2="350" stroke="#CBD5E1" stroke-width="3" stroke-dasharray="5,5"/>
+                            <circle cx="200" cy="200" r="8" fill="#0066FF">
+                                <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="300" cy="200" r="8" fill="#00D084">
+                                <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="300" cy="300" r="8" fill="#FF9500">
+                                <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+                            </circle>
+                        </svg>
+                    </div>
                 </div>
             </div>
         </div>
@@ -546,6 +634,7 @@
                     <ul class="footer-links">
                         <li><a href="#home">Início</a></li>
                         <li><a href="#features">Funcionalidades</a></li>
+                        <li><a href="#custom-automation">Automação Personalizada</a></li>
                         <li><a href="#pricing">Planos e Preços</a></li>
                         <li><a href="#testimonials">Depoimentos</a></li>
                     </ul>
