@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automação de RFQs no Nimbi | Economize Tempo e Aumente Eficiência</title>
+    <meta name="description" content="Automatize suas RFQs no Nimbi com nosso robô inteligente. Coleta automática, relatórios prontos e economia de até 70% do tempo.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Fixed CTA Button -->
+    <button id="fixedCTA" class="fixed-cta" aria-label="Solicitar Demonstração">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM14 11H11V14H9V11H6V9H9V6H11V9H14V11Z" fill="currentColor"/>
+        </svg>
+        Solicitar Demo
+    </button>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav-logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="32" height="32" rx="8" fill="#0066FF"/>
+                    <path d="M16 8L8 12V20L16 24L24 20V12L16 8Z" fill="white"/>
+                    <path d="M16 16L12 14V18L16 20L20 18V14L16 16Z" fill="#00D084"/>
+                </svg>
+                <span>RFQ Automação</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#features" class="nav-link">Funcionalidades</a></li>
+                <li><a href="#pricing" class="nav-link">Planos</a></li>
+                <li><a href="#testimonials" class="nav-link">Depoimentos</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+                <li><a href="#contact" class="btn btn-primary btn-small">Solicitar Demo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Automatize suas cotações agora</span>
+                </div>
+                <h1 class="hero-title">Automatize suas RFQs no Nimbi e economize tempo</h1>
+                <p class="hero-description">Nosso robô organiza, processa e gera relatórios automáticos das suas cotações. Reduza em até 70% o tempo gasto com processos manuais.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary btn-large">Solicitar Demonstração</a>
+                    <a href="#pricing" class="btn btn-secondary btn-large">Ver Planos e Preços</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">70%</div>
+                        <div class="stat-label">Redução de tempo</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Automático</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Monitoramento</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="dashboard-mockup">
+                    <div class="mockup-header">
+                        <div class="mockup-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="mockup-title">RFQ Automação Dashboard</div>
+                    </div>
+                    <div class="mockup-content">
+                        <div class="mockup-card">
+                            <div class="card-icon success">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-label">RFQs Processadas</div>
+                                <div class="card-value">1,247</div>
+                            </div>
+                        </div>
+                        <div class="mockup-card">
+                            <div class="card-icon primary">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-label">Tempo Economizado</div>
+                                <div class="card-value">156h</div>
+                            </div>
+                        </div>
+                        <div class="mockup-progress">
+                            <div class="progress-label">Coleta em andamento</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Como Funciona</h2>
+                <p class="section-description">Automatize todo o processo de cotações com tecnologia de ponta</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="#E6F2FF"/>
+                            <path d="M16 8L8 12V20L16 24L24 20V12L16 8Z" stroke="#0066FF" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Coleta Automática de RFQs</h3>
+                    <p class="feature-description">O robô acessa automaticamente suas pendências no Nimbi e coleta todas as RFQs disponíveis, sem necessidade de intervenção manual.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="#E6F9F2"/>
+                            <path d="M12 16L15 19L20 13M24 16C24 20.4183 20.4183 24 16 24C11.5817 24 8 20.4183 8 16C8 11.5817 11.5817 8 16 8C20.4183 8 24 11.5817 24 16Z" stroke="#00D084" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Geração de Relatórios Prontos</h3>
+                    <p class="feature-description">Relatórios completos e organizados são gerados automaticamente, prontos para análise e tomada de decisão imediata.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="#FFF4E6"/>
+                            <path d="M16 10V16L20 18M24 16C24 20.4183 20.4183 24 16 24C11.5817 24 8 20.4183 8 16C8 11.5817 11.5817 8 16 8C20.4183 8 24 11.5817 24 16Z" stroke="#FF9500" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Relatórios Detalhados</h3>
+                    <p class="feature-description">Gere documentos completos em Word com todas as informações das RFQs, incluindo itens, comentários e anexos.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="#F3E6FF"/>
+                            <path d="M16 8V16M16 16V24M16 16H24M16 16H8" stroke="#8B5CF6" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Personalizações Sob Medida</h3>
+                    <p class="feature-description">Adapte o robô às necessidades específicas da sua empresa com personalizações customizadas e suporte dedicado.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="#FFE6E6"/>
+                            <path d="M16 12V16M16 20H16.01M24 16C24 20.4183 20.4183 24 16 24C11.5817 24 8 20.4183 8 16C8 11.5817 11.5817 8 16 8C20.4183 8 24 11.5817 24 16Z" stroke="#FF4444" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Segurança e Licenciamento</h3>
+                    <p class="feature-description">Chave de ativação única por PC garante segurança e controle total sobre o uso do sistema em sua empresa.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="#E6F9FF"/>
+                            <path d="M12 14L16 18L20 14M10 8H22C23.1046 8 24 8.89543 24 10V22C24 23.1046 23.1046 24 22 24H10C8.89543 24 8 23.1046 8 22V10C8 8.89543 8.89543 8 10 8Z" stroke="#00B8D4" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Redução de Erros</h3>
+                    <p class="feature-description">Elimine erros humanos no processo de cotação com automação inteligente e validação automática de dados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Planos e Preços</h2>
+                <p class="section-description">Escolha o plano ideal para o tamanho da sua operação</p>
+            </div>
+            <div class="pricing-table-wrapper">
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Nº de PCs Ativos</th>
+                            <th>Valor por PC</th>
+                            <th>Total Mensal</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Nº de PCs">1 PC</td>
+                            <td data-label="Valor por PC"><strong>R$ 400</strong></td>
+                            <td data-label="Total Mensal"><strong>R$ 400/mês</strong></td>
+                            <td><a href="#contact" class="btn btn-outline btn-small">Contratar</a></td>
+                        </tr>
+                        <tr class="popular">
+                            <td data-label="Nº de PCs">
+                                2 PCs
+                                <span class="badge-popular">Mais Popular</span>
+                            </td>
+                            <td data-label="Valor por PC"><strong>R$ 350</strong></td>
+                            <td data-label="Total Mensal"><strong>R$ 700/mês</strong></td>
+                            <td><a href="#contact" class="btn btn-primary btn-small">Contratar</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Nº de PCs">3 PCs</td>
+                            <td data-label="Valor por PC"><strong>R$ 300</strong></td>
+                            <td data-label="Total Mensal"><strong>R$ 900/mês</strong></td>
+                            <td><a href="#contact" class="btn btn-outline btn-small">Contratar</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Nº de PCs">4+ PCs</td>
+                            <td data-label="Valor por PC"><strong>R$ 250</strong></td>
+                            <td data-label="Total Mensal"><strong>Sob consulta</strong></td>
+                            <td><a href="#contact" class="btn btn-outline btn-small">Consultar</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pricing-extras">
+                <h3 class="extras-title">Serviços Adicionais</h3>
+                <div class="extras-grid">
+                    <div class="extra-card">
+                        <div class="extra-icon">⚙️</div>
+                        <h4>Personalização Única</h4>
+                        <p class="extra-price">R$ 400 - R$ 800</p>
+                        <p>Adaptações específicas para seu fluxo de trabalho</p>
+                    </div>
+                    <div class="extra-card">
+                        <div class="extra-icon">🛠️</div>
+                        <h4>Suporte Mensal</h4>
+                        <p class="extra-price">R$ 100/PC</p>
+                        <p>Manutenção, atualizações e suporte prioritário</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">O Que Nossos Clientes Dizem</h2>
+                <p class="section-description">Empresas que já transformaram seus processos de cotação</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                    <p class="testimonial-text">"Reduzimos em 70% o tempo gasto com cotações. O robô funciona perfeitamente e nos dá muito mais tempo para focar em negociações estratégicas."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JM</div>
+                        <div class="author-info">
+                            <div class="author-name">João Martins</div>
+                            <div class="author-role">Gerente de Compras - Indústria XYZ</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                    <p class="testimonial-text">"A automação é impressionante. Antes gastávamos horas coletando e organizando RFQs, agora tudo é feito automaticamente com precisão total."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MS</div>
+                        <div class="author-info">
+                            <div class="author-name">Maria Silva</div>
+                            <div class="author-role">Coordenadora de Suprimentos - Tech Corp</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                    <p class="testimonial-text">"O suporte é excelente e as personalizações atenderam perfeitamente nossas necessidades específicas. Investimento que se paga rapidamente."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PC</div>
+                        <div class="author-info">
+                            <div class="author-name">Pedro Costa</div>
+                            <div class="author-role">Diretor de Operações - Logística ABC</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre a Empresa</h2>
+                    <p>Somos especialistas em automação de processos de compras e cotações, com foco em trazer eficiência e tecnologia para empresas que utilizam o Nimbi.</p>
+                    <p>Nossa missão é eliminar tarefas repetitivas e permitir que sua equipe foque no que realmente importa: negociações estratégicas e crescimento do negócio.</p>
+                    <div class="about-values">
+                        <div class="value-item">
+                            <div class="value-icon">🎯</div>
+                            <div>
+                                <h4>Eficiência</h4>
+                                <p>Automatização inteligente que economiza tempo</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">🔒</div>
+                            <div>
+                                <h4>Segurança</h4>
+                                <p>Proteção de dados e licenciamento controlado</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">💡</div>
+                            <div>
+                                <h4>Inovação</h4>
+                                <p>Tecnologia de ponta aplicada ao seu negócio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image-placeholder">
+                        <svg width="100%" height="100%" viewBox="0 0 400 400" fill="none">
+                            <rect width="400" height="400" rx="16" fill="#F8FAFC"/>
+                            <circle cx="200" cy="150" r="60" fill="#E6F2FF"/>
+                            <rect x="120" y="240" width="160" height="12" rx="6" fill="#0066FF"/>
+                            <rect x="140" y="270" width="120" height="8" rx="4" fill="#00D084"/>
+                            <rect x="160" y="295" width="80" height="8" rx="4" fill="#CBD5E1"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Perguntas Frequentes</h2>
+                <p class="section-description">Tire suas dúvidas sobre o robô de automação</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Preciso ter o Nimbi para usar o robô?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim, o robô foi desenvolvido especificamente para acessar e processar suas pendências no sistema Nimbi. É necessário ter uma conta ativa no Nimbi para utilizar a automação.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Posso usar o robô em mais de um computador?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Cada computador requer uma chave de ativação única. Oferecemos planos com descontos progressivos para múltiplos PCs, tornando mais econômico expandir o uso do robô em sua empresa.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Existe suporte caso eu precise de ajustes ou tenha problemas?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Oferecemos suporte mensal opcional por R$ 100/PC, que inclui manutenção, atualizações e atendimento prioritário. Também realizamos personalizações sob demanda para atender necessidades específicas.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Como funciona o processo de instalação?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Após a contratação, enviamos o instalador e a chave de ativação única para cada PC. A instalação é simples e rápida, e oferecemos suporte completo durante todo o processo de configuração inicial.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>O robô funciona 24 horas por dia?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! O robô pode ser configurado para monitorar e processar RFQs continuamente, garantindo que nenhuma cotação seja perdida e que os relatórios estejam sempre atualizados.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Quais tipos de relatórios são gerados?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O robô gera relatórios completos com todas as informações das RFQs, incluindo status, comentários, prazos e histórico. Os relatórios podem ser personalizados de acordo com as necessidades da sua empresa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <p class="contact-description">Solicite uma demonstração ou tire suas dúvidas com nossa equipe</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 8L10.89 13.26C11.5 13.67 12.5 13.67 13.11 13.26L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:contato@rfqautomacao.com.br">contato@rfqautomacao.com.br</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Telefone</h4>
+                                <a href="tel:+5511999999999">(11) 99999-9999</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M17.472 14.382C17.015 14.154 14.768 13.045 14.354 12.893C13.94 12.741 13.64 12.665 13.34 13.122C13.04 13.579 12.146 14.631 11.888 14.931C11.63 15.231 11.372 15.273 10.915 15.045C10.458 14.817 8.99 14.337 7.26 12.795C5.91 11.587 5.01 10.095 4.752 9.638C4.494 9.181 4.724 8.935 4.952 8.707C5.156 8.503 5.409 8.175 5.637 7.917C5.865 7.659 5.941 7.485 6.093 7.185C6.245 6.885 6.169 6.627 6.055 6.399C5.941 6.171 5.01 3.924 4.638 3.01C4.266 2.096 3.894 2.222 3.636 2.222C3.378 2.222 3.078 2.18 2.778 2.18C2.478 2.18 1.979 2.294 1.565 2.751C1.151 3.208 0 4.317 0 6.564C0 8.811 1.607 10.974 1.835 11.274C2.063 11.574 5.01 16.185 9.447 18.18C13.884 20.175 13.884 19.491 14.9 19.407C15.916 19.323 17.787 18.264 18.159 17.121C18.531 15.978 18.531 15.021 18.417 14.835C18.303 14.649 18.003 14.535 17.472 14.382Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/5511999999999" target="_blank">Iniciar conversa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Empresa</label>
+                        <input type="text" id="company" name="company" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large btn-full">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="32" height="32" rx="8" fill="#0066FF"/>
+                            <path d="M16 8L8 12V20L16 24L24 20V12L16 8Z" fill="white"/>
+                            <path d="M16 16L12 14V18L16 20L20 18V14L16 16Z" fill="#00D084"/>
+                        </svg>
+                        <span>RFQ Automação</span>
+                    </div>
+                    <p class="footer-description">Automatize suas cotações no Nimbi e economize tempo com tecnologia de ponta.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M4.5 2.5C3.67 2.5 3 3.17 3 4C3 4.83 3.67 5.5 4.5 5.5C5.33 5.5 6 4.83 6 4C6 3.17 5.33 2.5 4.5 2.5ZM3 7V17H6V7H3ZM8 7V17H11V11.5C11 9.57 13.43 9.39 13.43 11.5V17H16.5V10.38C16.5 6.75 12.93 6.89 11 8.56V7H8Z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 0C7.28 0 6.94 0.01 5.88 0.06C2.73 0.22 0.22 2.73 0.06 5.88C0.01 6.94 0 7.28 0 10C0 12.72 0.01 13.06 0.06 14.12C0.22 17.27 2.73 19.78 5.88 19.94C6.94 19.99 7.28 20 10 20C12.72 20 13.06 19.99 14.12 19.94C17.27 19.78 19.78 17.27 19.94 14.12C19.99 13.06 20 12.72 20 10C20 7.28 19.99 6.94 19.94 5.88C19.78 2.73 17.27 0.22 14.12 0.06C13.06 0.01 12.72 0 10 0ZM10 5C7.24 5 5 7.24 5 10C5 12.76 7.24 15 10 15C12.76 15 15 12.76 15 10C15 7.24 12.76 5 10 5ZM16 4C16 4.55 15.55 5 15 5C14.45 5 14 4.55 14 4C14 3.45 14.45 3 15 3C15.55 3 16 3.45 16 4ZM10 7C11.66 7 13 8.34 13 10C13 11.66 11.66 13 10 13C8.34 13 7 11.66 7 10C7 8.34 8.34 7 10 7Z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M19.615 5.481C19.615 5.481 19.423 4.066 18.826 3.462C18.083 2.683 17.251 2.679 16.868 2.634C14.086 2.431 10.003 2.431 10.003 2.431H9.997C9.997 2.431 5.914 2.431 3.132 2.634C2.749 2.679 1.917 2.683 1.174 3.462C0.577 4.066 0.385 5.481 0.385 5.481C0.385 5.481 0.188 7.137 0.188 8.793V10.337C0.188 11.993 0.385 13.649 0.385 13.649C0.385 13.649 0.577 15.064 1.174 15.668C1.917 16.447 2.892 16.422 3.332 16.503C4.988 16.656 10 16.7 10 16.7C10 16.7 14.086 16.694 16.868 16.491C17.251 16.446 18.083 16.442 18.826 15.663C19.423 15.059 19.615 13.644 19.615 13.644C19.615 13.644 19.812 11.988 19.812 10.332V8.788C19.812 7.132 19.615 5.476 19.615 5.476V5.481ZM7.954 12.644V6.856L13.332 9.756L7.954 12.644Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#features">Funcionalidades</a></li>
+                        <li><a href="#pricing">Planos e Preços</a></li>
+                        <li><a href="#testimonials">Depoimentos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <ul class="footer-links">
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#">Documentação</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul class="footer-contact">
+                        <li>contato@rfqautomacao.com.br</li>
+                        <li>(11) 99999-9999</li>
+                        <li>São Paulo, SP</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RFQ Automação. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
